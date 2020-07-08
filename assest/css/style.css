@@ -1,0 +1,677 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+html,
+body {
+  height: 100%;
+  max-height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+/*******************
+Header style
+********************/
+header {
+  width: 100%;
+  border-top: solid 4px #74aeea;
+  position: relative;
+}
+header .navbar .navbar-brand {
+  font-size: 25px;
+  font-weight: 600;
+  color: #4d4d4d;
+  text-transform: uppercase;
+}
+header .navbar .navbar-collapse ul li {
+  margin: 0 20px;
+}
+header .navbar .navbar-collapse ul li a {
+  color: #4d4d4d;
+  font-weight: 600;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+header .navbar .navbar-collapse ul li a.active {
+  color: #74aeea;
+}
+header .navbar .navbar-collapse ul li a:hover {
+  text-decoration: none;
+  transition: all 0.5s ease;
+  color: #74aeea;
+}
+header .navbar .navbar-collapse button {
+  background: #74aeea;
+  border: solid 1px #74aeea;
+  color: #ffffff;
+  padding: 6px 20px;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+}
+header .navbar .navbar-collapse button:focus {
+  box-shadow: none;
+  outline: none;
+}
+header .navbar .navbar-collapse button:hover {
+  background: #3d7bbb;
+  transition: all 0.5s ease;
+}
+
+.Home_page_slider_section {
+  height: calc(100% - 67px);
+  width: 100%;
+  position: relative;
+  background: url("../images/home_banners.jpg");
+  background-size: cover;
+  background-position: center;
+  border-bottom: solid 7px #74aeea;
+}
+.Home_page_slider_section .home_sections_contents {
+  padding-top: 15%;
+}
+@media (max-width: 767px) {
+  .Home_page_slider_section .home_sections_contents {
+    padding-top: 20%;
+  }
+}
+.Home_page_slider_section .home_sections_contents h1 {
+  width: 100%;
+  max-width: 630px;
+  color: #4d4d4d;
+  font-weight: bolder;
+  line-height: 50px;
+  font-size: 40px;
+  margin: 0 0 10px 0;
+  text-transform: capitalize;
+}
+@media (max-width: 767px) {
+  .Home_page_slider_section .home_sections_contents h1 {
+    font-size: 30px;
+  }
+}
+.Home_page_slider_section .home_sections_contents span {
+  color: #74aeea;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+.Home_page_slider_section .home_sections_contents .tabs_sections {
+  margin: 50px 0 0 0;
+  width: 100%;
+  max-width: 500px;
+}
+.Home_page_slider_section .home_sections_contents .tabs_sections ul.nav-tabs {
+  padding: 0 0 15px 0;
+}
+.Home_page_slider_section .home_sections_contents .tabs_sections ul.nav-tabs a.nav-link {
+  position: relative;
+  font-size: 30px;
+  color: #4d4d4d;
+  border-radius: 50%;
+  border: solid 1px #cccccc;
+  height: 60px;
+  width: 60px;
+  margin: 0 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Home_page_slider_section .home_sections_contents .tabs_sections ul.nav-tabs a.nav-link::after {
+  content: "";
+  position: absolute;
+  top: auto;
+  bottom: -17px;
+  background: #74aeea;
+  width: 100%;
+  height: 3px;
+  display: none;
+}
+.Home_page_slider_section .home_sections_contents .tabs_sections ul.nav-tabs a.nav-link.active {
+  color: #74aeea;
+  border: solid 1px #74aeea;
+}
+.Home_page_slider_section .home_sections_contents .tabs_sections ul.nav-tabs a.nav-link.active::after {
+  display: inline-block;
+}
+.Home_page_slider_section .home_sections_contents .tabs_sections .tab-content .tab-pane {
+  padding: 20px 0 0 0;
+}
+.Home_page_slider_section .home_sections_contents .tabs_sections .tab-content .tab-pane h4 {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+  color: #000000;
+}
+.Home_page_slider_section .home_sections_contents .tabs_sections .tab-content .tab-pane p {
+  margin: 0;
+  font-size: 16px;
+  color: #4d4d4d;
+}
+
+.admission_sections {
+  padding: 60px 0;
+}
+.admission_sections .admission_heading {
+  text-align: center;
+  width: 100%;
+  margin: 0 0 60px 0;
+}
+.admission_sections .admission_heading h2 {
+  position: relative;
+  font-size: 25px;
+  color: #000000;
+  margin: 0;
+  padding: 0 0 15px 0;
+  font-weight: 600;
+}
+.admission_sections .admission_heading h2::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  top: auto;
+  bottom: -5px;
+  height: 1px;
+  left: 0;
+  right: -100px;
+  margin: auto;
+  background: #74aeea;
+}
+.admission_sections .admission_heading h2::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  top: auto;
+  bottom: -5px;
+  height: 1px;
+  left: -100px;
+  right: 0px;
+  margin: auto;
+  background: #74aeea;
+}
+.admission_sections .admission_heading h2 span {
+  position: absolute;
+  top: auto;
+  bottom: -10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 1px #74aeea;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.admission_sections .admission_contents p {
+  margin: 0 0 30px 0;
+}
+.admission_sections .admission_contents button {
+  background: #74aeea;
+  border: solid 1px #74aeea;
+  color: #ffffff;
+  padding: 6px 20px;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  width: 150px;
+}
+.admission_sections .admission_contents button:focus {
+  box-shadow: none;
+  outline: none;
+}
+.admission_sections .admission_contents button:hover {
+  background: #3d7bbb;
+  transition: all 0.5s ease;
+}
+.admission_sections .adminssion_img img {
+  width: 100%;
+}
+.admission_sections .mission_sections {
+  margin: 20px 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 0;
+  transition: all 0.5s ease;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.admission_sections .mission_sections:hover {
+  transition: all 0.5s ease;
+  border-radius: 15px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.admission_sections .mission_sections:hover .icons_sections {
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+.admission_sections .mission_sections:hover h3 {
+  color: #74aeea;
+}
+.admission_sections .mission_sections .icons_sections {
+  position: absolute;
+  left: 0;
+  right: auto;
+  top: auto;
+  bottom: 0;
+  display: none;
+  transition: all 0.5s ease;
+}
+.admission_sections .mission_sections .icons_sections svg {
+  width: 90px;
+  fill: #e4e4e4;
+}
+.admission_sections .mission_sections h3 {
+  font-size: 22px;
+  margin: 0 0 20px 0;
+  color: #4d4d4d;
+  position: relative;
+}
+.admission_sections .mission_sections p {
+  font-size: 15px;
+  margin: 0;
+  color: #000000;
+  position: relative;
+}
+
+.appointment_sections {
+  background: #f7f7f7;
+  padding: 60px;
+}
+.appointment_sections .appointment_heading {
+  margin: 0 0 40px 0;
+  width: 100%;
+  text-align: center;
+}
+.appointment_sections .appointment_heading h2 {
+  position: relative;
+  font-size: 25px;
+  color: #000000;
+  margin: 0;
+  padding: 0 0 15px 0;
+  font-weight: 600;
+}
+.appointment_sections .appointment_heading h2::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  top: auto;
+  bottom: -5px;
+  height: 1px;
+  left: 0;
+  right: -100px;
+  margin: auto;
+  background: #74aeea;
+}
+.appointment_sections .appointment_heading h2::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  top: auto;
+  bottom: -5px;
+  height: 1px;
+  left: -100px;
+  right: 0px;
+  margin: auto;
+  background: #74aeea;
+}
+.appointment_sections .appointment_heading h2 span {
+  position: absolute;
+  top: auto;
+  bottom: -10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 1px #74aeea;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.appointment_sections .appointment_heading p {
+  margin: 0;
+  width: 100%;
+  max-width: 750px;
+  margin: 20px auto 20px;
+  color: #4d4d4d;
+}
+.appointment_sections .appointment_form {
+  padding: 40px 0 0 0;
+}
+.appointment_sections .appointment_form .form-group {
+  margin: 0 0 30px 0;
+}
+.appointment_sections .appointment_form .form-group input,
+.appointment_sections .appointment_form .form-group textarea {
+  width: 100%;
+  height: 40px;
+  border: solid #ccc 1px;
+  background: transparent;
+}
+.appointment_sections .appointment_form .form-group input:focus,
+.appointment_sections .appointment_form .form-group textarea:focus {
+  border: solid 1px #74aeea;
+  box-shadow: none;
+  outline: none;
+}
+.appointment_sections .appointment_form .form-group textarea {
+  height: 120px;
+  resize: none;
+}
+.appointment_sections .appointment_form button {
+  background: #74aeea;
+  border: solid 1px #74aeea;
+  color: #ffffff;
+  padding: 6px 20px;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  width: 120px;
+  height: 42px;
+}
+.appointment_sections .appointment_form button:focus {
+  box-shadow: none;
+  outline: none;
+}
+.appointment_sections .appointment_form button:hover {
+  background: #3d7bbb;
+  transition: all 0.5s ease;
+}
+@media (max-width: 767px) {
+  .appointment_sections .appointment_form button {
+    margin: 0 0 40px 0;
+  }
+}
+.appointment_sections .make_appointment_img {
+  text-align: center;
+}
+.appointment_sections .make_appointment_img img {
+  width: 100%;
+  max-width: 280px;
+}
+
+.patient_details_section {
+  padding: 60px 0;
+}
+.patient_details_section .main-timeline2 {
+  padding-top: 50px;
+  overflow: hidden;
+  position: relative;
+}
+.patient_details_section .main-timeline2::before {
+  content: "";
+  width: 7px;
+  height: 100%;
+  background: #084772;
+  margin: 0 auto;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+}
+.patient_details_section .main-timeline2 .timeline {
+  width: 50%;
+  float: left;
+  padding: 20px 60px;
+  border-top: 7px solid #084772;
+  border-right: 7px solid #084772;
+  border-radius: 0 30px 0 0;
+  position: relative;
+  right: -3.5px;
+}
+.patient_details_section .main-timeline2 .icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #e84c47;
+  border: 1px solid #fff;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  box-shadow: 0 0 0 2px #e84c47;
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+.patient_details_section .main-timeline2 .timeline-content {
+  display: block;
+  padding: 30px 10px 10px;
+  border-radius: 20px;
+  background: #e84c47;
+  color: #fff;
+  position: relative;
+}
+.patient_details_section .main-timeline2 .timeline-content:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.patient_details_section .main-timeline2 .timeline-content:after,
+.patient_details_section .main-timeline2 .timeline-content:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 50px;
+  border-radius: 10px;
+  background: #e84c47;
+  border: 1px solid #fff;
+  position: absolute;
+  top: -35px;
+  left: 50px;
+}
+.patient_details_section .main-timeline2 .timeline-content:after {
+  left: auto;
+  right: 50px;
+}
+.patient_details_section .main-timeline2 .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.patient_details_section .main-timeline2 .title .step_no {
+  font-size: 22px;
+  color: #ffffff;
+  margin: 0;
+}
+.patient_details_section .main-timeline2 .title span.data_text {
+  font-size: 14px;
+  color: #ffffff;
+}
+.patient_details_section .main-timeline2 .description {
+  font-size: 15px;
+  margin: 0 0 5px;
+  padding-bottom: 15px;
+}
+.patient_details_section .main-timeline2 .timeline:nth-child(2n) {
+  border-right: none;
+  border-left: 7px solid #084772;
+  border-radius: 30px 0 0;
+  right: auto;
+  left: -3.5px;
+}
+.patient_details_section .main-timeline2 .timeline:nth-child(2n) .icon {
+  left: auto;
+  right: 0;
+  box-shadow: 0 0 0 2px #4bd9bf;
+}
+.patient_details_section .main-timeline2 .timeline:nth-child(2) {
+  margin-top: 130px;
+}
+.patient_details_section .main-timeline2 .timeline:nth-child(odd) {
+  margin: -130px 0 30px;
+}
+.patient_details_section .main-timeline2 .timeline:nth-child(even) {
+  margin-bottom: 80px;
+}
+.patient_details_section .main-timeline2 .timeline:first-child,
+.patient_details_section .main-timeline2 .timeline:last-child:nth-child(even) {
+  margin: 0 0 30px;
+}
+.patient_details_section .main-timeline2 .timeline:nth-child(2n) .icon,
+.patient_details_section .main-timeline2 .timeline:nth-child(2n) .timeline-content,
+.patient_details_section .main-timeline2 .timeline:nth-child(2n) .timeline-content:after,
+.patient_details_section .main-timeline2 .timeline:nth-child(2n) .timeline-content:before {
+  background: #4bd9bf;
+}
+.patient_details_section .main-timeline2 .timeline:nth-child(3n) .icon,
+.patient_details_section .main-timeline2 .timeline:nth-child(3n) .timeline-content,
+.patient_details_section .main-timeline2 .timeline:nth-child(3n) .timeline-content:after,
+.patient_details_section .main-timeline2 .timeline:nth-child(3n) .timeline-content:before {
+  background: #ff9e09;
+}
+.patient_details_section .main-timeline2 .timeline:nth-child(3n) .icon {
+  box-shadow: 0 0 0 2px #ff9e09;
+}
+.patient_details_section .main-timeline2 .timeline:nth-child(4n) .icon,
+.patient_details_section .main-timeline2 .timeline:nth-child(4n) .timeline-content,
+.patient_details_section .main-timeline2 .timeline:nth-child(4n) .timeline-content:after,
+.patient_details_section .main-timeline2 .timeline:nth-child(4n) .timeline-content:before {
+  background: #3ebae7;
+}
+.patient_details_section .main-timeline2 .timeline:nth-child(4n) .icon {
+  box-shadow: 0 0 0 2px #3ebae7;
+}
+@media only screen and (max-width: 767px) {
+  .patient_details_section .main-timeline2:before {
+    left: 0;
+    right: auto;
+  }
+  .patient_details_section .main-timeline2 .timeline,
+.patient_details_section .main-timeline2 .timeline:nth-child(even),
+.patient_details_section .main-timeline2 .timeline:nth-child(odd) {
+    width: 100%;
+    float: none;
+    padding: 20px 30px;
+    margin: 0 0 30px;
+    border-right: none;
+    border-left: 7px solid #084772;
+    border-radius: 30px 0 0;
+    right: auto;
+    left: 0;
+  }
+  .patient_details_section .main-timeline2 .icon {
+    left: auto;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .patient_details_section .main-timeline2 .title {
+    font-size: 18px;
+  }
+}
+
+.service_sections {
+  background: #f7f7f7;
+  padding: 60px 0;
+}
+.service_sections .service_heading {
+  width: 100%;
+  text-align: center;
+}
+.service_sections .service_heading h2 {
+  position: relative;
+  font-size: 25px;
+  color: #000000;
+  margin: 0;
+  padding: 0 0 15px 0;
+  font-weight: 600;
+}
+.service_sections .service_heading h2::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  top: auto;
+  bottom: -5px;
+  height: 1px;
+  left: 0;
+  right: -100px;
+  margin: auto;
+  background: #74aeea;
+}
+.service_sections .service_heading h2::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  top: auto;
+  bottom: -5px;
+  height: 1px;
+  left: -100px;
+  right: 0px;
+  margin: auto;
+  background: #74aeea;
+}
+.service_sections .service_heading h2 span {
+  position: absolute;
+  top: auto;
+  bottom: -10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 1px #74aeea;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.service_sections .service_cards {
+  position: relative;
+  padding: 15px;
+  display: flex;
+  margin: 40px 0 0 0;
+  box-shadow: none;
+  transition: all 0.5s ease;
+}
+.service_sections .service_cards:hover {
+  transition: all 0.5s ease;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.service_sections .service_cards:hover .service_icons i {
+  color: #74aeea;
+}
+.service_sections .service_cards:hover .service_text_content h4 {
+  color: #74aeea;
+}
+.service_sections .service_cards .service_icons {
+  margin: 0 15px 0 0;
+}
+.service_sections .service_cards .service_icons i {
+  font-size: 30px;
+  color: #74aeea;
+}
+.service_sections .service_cards .service_text_content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4d4d4d;
+  margin: 0 0 5px 0;
+}
+.service_sections .service_cards .service_text_content p {
+  margin: 0;
+  color: #000000;
+  font-size: 15px;
+}
+.service_sections .service_right_heading {
+  padding: 50px 0 0 0;
+}
+.service_sections .service_right_heading h3 {
+  font-size: 25px;
+  color: #4d4d4d;
+  margin: 0;
+  font-weight: 600;
+}
+.service_sections .service_right_heading span {
+  color: #74aeea;
+}
+.service_sections .service_right_heading p {
+  margin: 30px 0 0 0;
+  color: #000000;
+}
+
+footer {
+  background: #74aeea;
+  padding: 30px 0;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */
